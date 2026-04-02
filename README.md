@@ -1,3 +1,34 @@
-## Eissa Aldeehan
+### Hi there 👋, I'm Eissa Aldeehan
 
-Eissa Aldeehan is a Software Engineering student at Abdullah Al Salem University.  
+```ts
+type Developer = {
+    name: string;
+    role: string;
+    education: string;
+    stack: {
+        core: string[];
+        framework: string[];
+        backend: string[];
+        cloud: string[];
+    };
+};
+
+function createDeveloper(): Developer {
+    return {
+        name: "Eissa Aldeehan",
+        role: "Software Engineer",
+        education: "Abdullah Al Salem University",
+        stack: {
+            core: ["TypeScript"],
+            framework: ["React", "Next.js"],
+            backend: ["Nest.js"],
+            cloud: ["Vercel", "AWS"],
+        },
+    };
+}
+
+const me = createDeveloper();
+
+export default me;
+
+```
